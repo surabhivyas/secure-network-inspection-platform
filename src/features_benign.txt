@@ -1,0 +1,9 @@
+is_insecure_protocol=0
+is_risky_file=0
+is_large_payload=0
+is_suspicious_domain=0
+is_privileged_execution_risk=0
+is_admin=0
+is_unencrypted=0
+is_data_exfiltration=0
+is_ioc_match=0

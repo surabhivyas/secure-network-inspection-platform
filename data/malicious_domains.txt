@@ -1,0 +1,3 @@
+evil.com
+malware.test
+stealer.io

@@ -1,0 +1,4 @@
+user5,user,10.1.1.5,trusted.com,HTTPS,443,1,report.pdf,pdf,50000,Quarterly report
+user6,user,192.168.100.50,evil.com,HTTPS,443,1,normal.txt,txt,1000,Regular payload
+user7,user,10.1.1.7,trusted.com,HTTPS,443,1,customer_export.txt,txt,120000,Customer email user@example.com API_KEY=abc123
+admin_user,admin,10.10.1.25,unknown-download.example,HTTP,80,0,payload.exe,exe,5242880,Executable binary payload

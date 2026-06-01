@@ -1,0 +1,52 @@
+{
+ "summary": {
+ "total_records": 4,
+ "allowed": 1,
+ "alerted": 0,
+ "blocked": 3,
+ "dlp_events": 1,
+ "ioc_matches": 1
+ },
+ "results": [
+ {
+ "record_id": 1,
+ "user": "user5",
+ "source_ip": "10.1.1.5",
+ "destination_domain": "trusted.com",
+ "decision": "ALLOW",
+ "risk_score": 0,
+ "confidence": 0,
+ "findings": []
+ },
+ {
+ "record_id": 2,
+ "user": "user6",
+ "source_ip": "192.168.100.50",
+ "destination_domain": "evil.com",
+ "decision": "BLOCK",
+ "risk_score": 1,
+ "confidence": 1,
+ "findings": ["IOC_MATCH_DETECTED"]
+ },
+ {
+ "record_id": 3,
+ "user": "user7",
+ "source_ip": "10.1.1.7",
+ "destination_domain": "trusted.com",
+ "decision": "BLOCK",
+ "risk_score": 0.8,
+ "confidence": 0.9,
+ "findings": ["DLP_DATA_EXFILTRATION"]
+ },
+ {
+ "record_id": 4,
+ "user": "admin_user",
+ "source_ip": "10.10.1.25",
+ "destination_domain": "unknown-download.example",
+ "decision": "BLOCK",
+ "risk_score": 1,
+ "confidence": 1,
+ "findings": ["INSECURE_PROTOCOL", "EXECUTABLE_DOWNLOAD", "LARGE_PAYLOAD", "SUSPICIOUS_DOMAIN", "PRIVILEGED_EXECUTION_RISK"]
+ }
+ ]
+}
