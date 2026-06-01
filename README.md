@@ -21,10 +21,10 @@ A security-focused network inspection platform developed in C++ that analyzes ne
 
 ## Project Structure
 
-src/        Core inspection engine
-api/        REST API layer
-ai/         Risk scoring module
-data/       IOC and traffic datasets
+- `src/`  - Core inspection engine
+- `api/`  - REST API layer
+- `ai/`   - Risk scoring module
+- `data/` - IOC and traffic datasets
 
 ## Sample Detection Categories
 
