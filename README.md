@@ -2,6 +2,10 @@
 
 A security-focused network inspection platform developed in C++ that analyzes network traffic and identifies potentially malicious activity using rule-based detection, IOC matching, and risk scoring.
 
+## Architecture
+
+![Architecture Diagram](Architecture.jpeg)
+
 ## Features
 
 - IOC (Indicator of Compromise) detection
