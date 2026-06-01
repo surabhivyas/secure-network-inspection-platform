@@ -1,20 +1,32 @@
 # Secure Network Inspection Platform
 
-A security-focused network inspection platform developed in C++ that analyzes network traffic and identifies potentially malicious activity using rule-based detection, IOC matching, and risk scoring.
+Security-focused traffic inspection platform built in C++ and Python for IOC detection, DLP inspection, threat scoring, and REST API integration.
+
+## Quick Summary
+
+A security-focused network inspection platform built in C++ and Python that performs:
+
+- IOC Detection (Indicators of Compromise)
+- Data Loss Prevention (DLP) Inspection
+- Risk-Based Threat Scoring
+- Malicious IP and Domain Detection
+- Rule-Based Traffic Analysis
+- REST API Integration
+- JSON Report Generation
 
 ## Architecture
 
 ![Architecture Diagram](Architecture.jpeg)
 
-## Features
+## Key Capabilities
 
-- IOC (Indicator of Compromise) detection
-- DLP (Data Loss Prevention) inspection
-- Risk scoring engine
-- Rule-based traffic analysis
-- REST API integration
-- AI-assisted scoring module
-- Multithreaded processing
+- IOC (Indicator of Compromise) Detection
+- Malicious Domain Identification
+- Malicious IP Detection
+- DLP Inspection
+- Risk Scoring
+- REST API Integration
+- JSON Report Generation
 
 ## Technology Stack
 
@@ -36,6 +48,14 @@ A security-focused network inspection platform developed in C++ that analyzes ne
 - Malicious domain detection
 - Data exfiltration indicators
 - Suspicious traffic patterns
+
+## Future Enhancements
+
+- Real-time packet capture
+- Threat intelligence integration
+- SIEM integration
+- Dashboard visualization
+- Machine learning anomaly detection
 
 ## Disclaimer
 
