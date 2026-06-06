@@ -35,6 +35,88 @@ A security-focused network inspection platform built in C++ and Python that perf
 - Linux
 - REST APIs
 
+## Build and Run
+
+### Prerequisites
+
+- Linux
+- GCC/G++ with C++17 support
+- Python 3
+- Flask
+
+### Build the Network Inspection Engine
+
+```bash
+cd src
+g++ -std=c++17 -pthread main.cpp rule_engine.cpp -o inspection_engine
+```
+
+### Run the Inspection Engine
+
+```bash
+./inspection_engine
+```
+
+### Install API Dependencies
+
+```bash
+pip install flask
+```
+
+### Start the REST API
+
+```bash
+cd api
+python3 app.py
+```
+
+The API starts on:
+
+```text
+http://localhost:5000
+```
+
+### API Endpoints
+
+#### Health Check
+
+```http
+GET /health
+```
+
+Example Response:
+
+```json
+{
+"status": "ok"
+}
+```
+
+#### Run Inspection
+
+```http
+POST /run-inspection
+```
+
+Triggers the C++ inspection engine and returns generated security findings from `inspection_results.json`.
+
+### Project Workflow
+
+```text
+Traffic Sources
+↓
+Network Inspection Engine (C++)
+↓
+IOC Detection / Rule Analysis / DLP Inspection
+↓
+Risk Scoring Module (Python)
+↓
+REST API Layer (Flask)
+↓
+JSON Security Findings
+```
+
+
 ## Project Structure
 
 - `src/`  - Core inspection engine
